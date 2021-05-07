@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 1</title>
+</head>
+<style>
+  img {border : 3px solid red;}
+</style>
+
+<body>
+  <img onmouseout="noBorder('0px solid #ffffff')" onmouseover="noBorder('3px solid red')" src="assets/images/image1.jpg" id="image1" />
+</body>
+
+<script>
+  function noBorder(border)
+  {
+    document.getElementById("image1").style.border = border ;
+  }
+</script>
+
+</html>

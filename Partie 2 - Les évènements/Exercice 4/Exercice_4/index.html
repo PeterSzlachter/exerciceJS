@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+</head>
+
+<body>
+  <div>
+    <img src="assets/images/image1.jpg" onmouseover="change(this)" id="image1" /> 
+    <img src="assets/images/image2.jpg" onmouseover="change(this)" id="image2" />
+    <img src="assets/images/image3.jpg" onmouseover="change(this)" id="image3" />
+    <img src="assets/images/image4.jpg" onmouseover="change(this)" id="image4" />
+    <img src="assets/images/image5.jpg" onmouseover="change(this)" id="image5" />
+  </div>
+</body>
+<script>
+  function change(image)
+  {
+
+    let image1 = document.getElementById('image1');
+    let image2 = document.getElementById('image2');
+    let image3 = document.getElementById('image3');
+    let image4 = document.getElementById('image4');
+    let image5 = document.getElementById('image5');
+
+    image.src = `assets/images/${image.id}_2.jpg`;
+
+    /* this permet de récupérer toute les attributs de la balise */
+
+  }
+
+</script>
+
+
+</html>
+
+<!--
+  ]<SCRIPT language="JavaScript">
+function changeImages(name,image) {
+window.document.name.src = image ;
+/* déclaration des images */
+image1 = new Image()
+image2 = new Image()
+image3 = new Image()
+// ten rajoute d'aute si besoin
+/* lien des images */
+image1.src = "mon_dossier/image1.jpg"
+image2.src = "mon_dossier/image1.jpg"
+image3.src = "mon_dossier/image1.jpg"
+// ten rajoute d'aute si besoin
+}
+</SCRIPT>-->

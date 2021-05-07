@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onkeypress="myFunction(event)" />
+    <p>Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.</p>
+  </form>
+</body>
+<script>
+  function myFunction(event){
+    let x = event.key;
+    document.getElementById("lastname").innerHTML = alert(`Vous avez entré ${x}`);
+  }
+ /*  function getDate()
+  {
+    let data = document.getElementById("lastname")
+    alert(`Vous avez entré ${data}`)
+  }
+  data.addEventListener('keypress', getDate) */
+</script>
+</html>
